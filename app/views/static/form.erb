@@ -53,3 +53,9 @@ viewBox="0 0 398.465 398.465" style="enable-background:new 0 0 398.465 398.465;"
 		<input class="btn btn-primary-outline" type="submit" value="Submit"></button>
 	</form>
 </div>
+<div id="resultBox">
+	<% @urls.each do |x| %>
+	<p>Your short url:   <a href="http://localhost:9393/<%= x.short_url%>">http://localhost:9393/<%= x.short_url%></a></p>
+	<br>
+	<%end%>
+</div>

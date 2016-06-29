@@ -2,6 +2,21 @@ body {
 	text-align: center;
 }
 
+body a {
+	text-decoration: none;
+	color: #373a3c;
+}
+
+body a:hover {
+	text-decoration: none;
+	color: #373a3c;
+}
+
+#pageTitle:active {
+	text-decoration: none;
+	color: #373a3c;
+}
+
 #errorMessage {
 	text-align: center;
 	font-family: Oswald;
@@ -28,15 +43,38 @@ body {
 	font-family: Oswald;
 }
 
+#inputBox {
+	width: 35%;
+}
+
 #resultBox {
 	background-color: #F48C6C;
 	border-radius: 25px;
 	height: 100px;
 	width: 60%;
 	margin: auto;
+
 	font-family: Lato;
 	font-size: 30px;
+}
 
+#resultBox p {
+	position: inline;
+	padding-top: 30px;
+	padding-bottom: 30px;
+
+}
+
+#resultBox a {
+	position: inline;
+	padding-top: 30px;
+	padding-bottom: 30px;
+	text-decoration: none;
+	color: #373a3c;
+}
+
+#resultBox a:hover {
+	color: #337ab7;
 }
 
 #linkImage {
@@ -49,4 +87,46 @@ body {
 #leftEyeball {
 	transform: rotate(360deg);
 	transform-origin: top left;
+}
+
+#pageTitle {
+	font-size: 90;
+	text-align: center;
+	font-family: 'Londrina Shadow', cursive;
+}
+
+#footerContainer {
+	display: inline;
+}
+
+footer {
+	position: absolute;
+	bottom: 5px;
+	width: 98%;
+	text-align: center;
+	font-family: Lato;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+footer a {
+	display: inline block;
+	width: 2%;
+	float: right;
+	padding: 0px 5px;
+	font-size: 25px;
+	color: #F48C6C;
+/*		position: relative;
+bottom: -25px;*/
+}
+
+footer a:hover {
+	color: #337ab7;
+}
+
+footer p {
+	width: 90%;
+	position: relative;
+	bottom: -40px;
+	left: 5%;
 }

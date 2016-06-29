@@ -8,7 +8,7 @@ post '/form' do
 	@url = Url.new(long_url: params[:long_url], count: 0)
 	@url.shorten
 		if @url.save
-			erb :"static/index"
+			erb :"static/form"
 		else
 			@message = @url.errors.messages[:long_url].pop
 			erb :"static/error"
