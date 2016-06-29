@@ -12,6 +12,51 @@ body a:hover {
 	color: #373a3c;
 }
 
+.panel {
+	display: none;
+	width: 90%;
+	height: 50%;
+	overflow-x: auto;
+	overflow-y: auto;
+	margin: auto;
+	text-align: center;
+}
+
+#urlTable {
+	border-spacing: 5px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#urlTable, #urlHeader, #urlRow {
+	min-width: 100px;
+	padding: 10px 10px;
+	border: 1px solid black;
+}
+
+#urlHeader {
+	text-align: center;
+	font-size: 24px;
+	font-family: Lato;
+	font-weight: 700;
+}
+
+#urlData {
+	font-family: Lato;
+	font-weight: 400;
+	border: 1px solid black;
+	padding: 10px 10px;
+}
+
+.panel p {
+	font-family: Oswald;
+	font-size: 30px;
+}
+
+.pull-me {
+	display: block;
+}
+
 #pageTitle:active {
 	text-decoration: none;
 	color: #373a3c;

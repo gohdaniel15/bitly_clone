@@ -3,11 +3,40 @@
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css" integrity="sha384-y3tfxAZXuh4HwSYylfB+J125MxIs6mR5FOHamPBG064zB+AFeWH94NdvaCBm8qnd" crossorigin="anonymous">
 <link href="https://fonts.googleapis.com/css?family=Lato:400,700|Oswald:700|Londrina+Shadow" rel="stylesheet">
 <script src="https://use.fontawesome.com/5760e317e8.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
 
 <head>
 	<title>Ditly</title>
+	<script>
+	$(document).ready(function() {
+		$('.pull-me').click(function() {
+			$('.panel').slideToggle('slow')
+		})
+	});
+	</script>
 </head>
 <body>
+	<div class="panel">
+		<p>Daniel's Shortened Urls</p>
+		<div class="wrapper">
+			<table id="urlTable">	
+				<tr>
+					<th id="urlHeader">Original Urls</th>
+					<th id="urlHeader">Short Urls</th>
+				</tr>
+				<%Url.all.each do |url|%>
+				<tr id="urlRow"><td id="urlData"><%=url.long_url%></td><td id="urlData"><%=url.short_url%></td></tr>
+				<%end%>
+			</table>
+		</div>
+	</div>
+	<p class="slide"><div class="pull-me">
+		<svg version="1.1" xmlns="http://www.w3.org/2000/svg" height="25px" width="25px" viewBox="0 0 129 129" xmlns:xlink="http://www.w3.org/1999/xlink" enable-background="new 0 0 129 129">
+  	<g>
+    	<path d="m121.3,34.6c-1.6-1.6-4.2-1.6-5.8,0l-51,51.1-51.1-51.1c-1.6-1.6-4.2-1.6-5.8,0-1.6,1.6-1.6,4.2 0,5.8l53.9,53.9c0.8,0.8 1.8,1.2 2.9,1.2 1,0 2.1-0.4 2.9-1.2l53.9-53.9c1.7-1.6 1.7-4.2 0.1-5.8z"/>
+  	</g>
+		</svg>
+	</div></p>
 	<div id="pageTitle">
 		<a href="http://localhost:9393/">Daniel's URL Shortener</a>
 	</div>
