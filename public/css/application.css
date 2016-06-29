@@ -1,0 +1,52 @@
+body {
+	text-align: center;
+}
+
+#errorMessage {
+	text-align: center;
+	font-family: Oswald;
+	margin-top: 10px;
+}
+
+#errorPicture {
+	margin-top: 3%;
+	text-align: center;
+}
+
+.container {
+	text-align: center;
+}
+
+#form {
+	font-family: Oswald;
+	font-size: 30;
+}
+
+#formBox {
+	text-align: center;
+	margin-top: 5%;
+	font-family: Oswald;
+}
+
+#resultBox {
+	background-color: #F48C6C;
+	border-radius: 25px;
+	height: 100px;
+	width: 60%;
+	margin: auto;
+	font-family: Lato;
+	font-size: 30px;
+
+}
+
+#linkImage {
+	height: 250px;
+	width: 250px;
+	text-align: center;
+	margin-top: 5%;
+}
+
+#leftEyeball {
+	transform: rotate(360deg);
+	transform-origin: top left;
+}

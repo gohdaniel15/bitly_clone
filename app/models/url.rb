@@ -1,6 +1,10 @@
 class Url < ActiveRecord::Base
 	# This is Sinatra! Remember to create a migration!
-	before_save :shorten
+
+	validates :long_url, uniqueness: true, presence: true, format: {
+		with: /http.?:\/\/.+/,
+		message: "Invalid URL"
+	}
 
 	def shorten
 		rnumbers = []

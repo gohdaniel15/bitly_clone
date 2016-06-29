@@ -1,8 +1,70 @@
 <html>
-	<head>
-		<title>Sinatra Framework</title>
-	</head>
-	<body>
-		<%= yield %>
-	</body>
-</html>
+<link rel="stylesheet" href="/css/application.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css" integrity="sha384-y3tfxAZXuh4HwSYylfB+J125MxIs6mR5FOHamPBG064zB+AFeWH94NdvaCBm8qnd" crossorigin="anonymous">
+<link href="https://fonts.googleapis.com/css?family=Lato:400,700|Oswald:700|Londrina+Shadow" rel="stylesheet">
+<script src="https://use.fontawesome.com/5760e317e8.js"></script>
+
+<style>
+	#pageTitle {
+		font-size: 90;
+		text-align: center;
+		font-family: 'Londrina Shadow', cursive;
+	}
+
+	#footerContainer {
+		display: inline;
+	}
+
+	footer {
+		position: absolute;
+		bottom: 5px;
+		width: 98%;
+		text-align: center;
+		font-family: Lato;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	footer a {
+		display: inline block;
+		width: 2%;
+		float: right;
+		padding: 0px 5px;
+		font-size: 25px;
+		color: #F48C6C;
+/*		position: relative;
+		bottom: -25px;*/
+	}
+
+	footer a:hover {
+		color: #337ab7;
+	}
+
+	footer p {
+		width: 90%;
+		position: relative;
+		bottom: -35px;
+		left: 5%;
+	}
+
+</style>
+
+<head>
+	<title>Sinatra Framework</title>
+</head>
+<body>
+	<div id="pageTitle">
+		Daniel's URL Shortener
+	</div>
+	<%= yield %>
+</body>
+
+<footer>
+	<div id="footerContainer" class="container">
+		<p>Created By Daniel Goh | A NEXT Academy Project</p>
+		<a id="personalButton" href="https://my.linkedin.com/in/danielgohky" target="_blank"><i class="fa fa-linkedin"></i><a>
+		<a id="personalButton"href="https://www.facebook.com/danielgohkengyu" target="_blank"><i class="fa fa-facebook"></i></a>
+		<a id="personalButton" href="https://github.com/gohdaniel15" target="_blank"><i class="fa fa-github"></i></a>
+		</div>
+	</footer>
+	</html>
