@@ -14,28 +14,38 @@ body a:hover {
 
 .panel {
 	display: none;
-	width: 90%;
+	width: 100%;
 	height: 50%;
 	overflow-x: auto;
 	overflow-y: auto;
 	margin: auto;
 	text-align: center;
+	background-color: #EAEAEA;
+	box-shadow: 5px 5px 2px #919191;
 }
 
 #urlTable {
 	border-spacing: 5px;
 	margin-left: auto;
 	margin-right: auto;
+	background-color: #F48C6C;
+	border-radius: 15px;
 }
 
 #urlTable, #urlHeader, #urlRow {
 	min-width: 100px;
 	padding: 10px 10px;
-	border: 1px solid black;
+}
+
+#urlRow {
+	display: inline block;
+}
+
+#urlRow:hover {
+	background-color: #3DD0F2;
 }
 
 #urlHeader {
-	text-align: center;
 	font-size: 24px;
 	font-family: Lato;
 	font-weight: 700;
@@ -44,7 +54,7 @@ body a:hover {
 #urlData {
 	font-family: Lato;
 	font-weight: 400;
-	border: 1px solid black;
+	border: 1px;
 	padding: 10px 10px;
 }
 
@@ -85,6 +95,7 @@ body a:hover {
 #formBox {
 	text-align: center;
 	margin-top: 5%;
+	margin-bottom: 5%;
 	font-family: Oswald;
 }
 
@@ -174,4 +185,8 @@ footer p {
 	position: relative;
 	bottom: -40px;
 	left: 5%;
+}
+
+.flipped{
+	-webkit-transform: scale(1,-1);
 }

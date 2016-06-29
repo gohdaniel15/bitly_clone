@@ -4,20 +4,23 @@
 <link href="https://fonts.googleapis.com/css?family=Lato:400,700|Oswald:700|Londrina+Shadow" rel="stylesheet">
 <script src="https://use.fontawesome.com/5760e317e8.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+<script type='text/javascript' src='jquery.rotate.1-1.js'></script>
 
 <head>
 	<title>Ditly</title>
 	<script>
+
 	$(document).ready(function() {
 		$('.pull-me').click(function() {
-			$('.panel').slideToggle('slow')
+			$('.panel').slideToggle('slow');
+			$(this).toggleClass("flipped");
 		})
 	});
 	</script>
 </head>
 <body>
 	<div class="panel">
-		<p>Daniel's Shortened Urls</p>
+		<p style="margin-top: 1%">Daniel's Shortened Urls</p>
 		<div class="wrapper">
 			<table id="urlTable">	
 				<tr>
