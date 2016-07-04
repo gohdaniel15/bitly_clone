@@ -22,7 +22,7 @@ $(document).ready(function() {
 				}
 			else {
 					$('#resultBox').hide();
-					$("#resultBox").html("http://localhost:9393/" + msg.short_url);
+					$("#resultBox").html("https://ditly.herokuapp.com/" + msg.short_url);
 					$("#resultBox").addClass("showBox");
 					$("#resultBox").slideToggle('slow');
 					$("#copyButton").css('display', 'none');
