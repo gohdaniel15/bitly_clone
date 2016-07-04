@@ -1,18 +1,21 @@
 get '/' do
-	@urls = Url.where(long_url: params[:long_url])
   erb :"static/index"
 end
 
-post '/form' do
-	@urls = Url.where(long_url: params[:long_url])
-	@url = Url.new(long_url: params[:long_url], count: 0)
-	@url.shorten
+post '/urls' do
+	if Url.exists?(long_url: params[:long_url])
+		@url = Url.find_by(long_url: params[:long_url])
+		return @url.to_json
+	else
+		@url = Url.new(long_url: params[:long_url])
+		@url.shorten
 		if @url.save
-			erb :"static/form"
+			return @url.to_json
 		else
-			@message = @url.errors.messages[:long_url].pop
-			erb :"static/error"
+		 	@errors = {errors: @url.errors}
+    	return @errors.to_json
 		end
+	end
 end
 
 get '/error' do

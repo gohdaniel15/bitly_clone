@@ -24,6 +24,16 @@ body a:hover {
 	box-shadow: 5px 5px 2px #919191;
 }
 
+#infoStatement {
+	font-size: 30px;
+}
+
+#infoDescription {
+	font-family: Lato;
+	font-size: 18px;
+	padding: 0;
+}
+
 #urlTable {
 	border-spacing: 5px;
 	margin-left: auto;
@@ -92,11 +102,26 @@ body a:hover {
 	font-size: 30;
 }
 
+#copyButton {
+	display: none;
+	color: #F48C6C;
+	margin-bottom: 50px;
+	margin-top: -30px;
+	width: auto;
+	height: auto;
+	font-family: Oswald;
+}
+
 #formBox {
 	text-align: center;
 	margin-top: 5%;
-	margin-bottom: 5%;
+	margin-bottom: 50px;
 	font-family: Oswald;
+	display: inline block;
+}
+
+#submitButton:active {
+	text-decoration-style: none;
 }
 
 #inputBox {
@@ -108,10 +133,35 @@ body a:hover {
 	border-radius: 25px;
 	height: 100px;
 	width: 60%;
-	margin: auto;
-
-	font-family: Lato;
+	margin: 50px auto;
+	display: none;
+	font-family: Oswald;
 	font-size: 30px;
+}
+
+#copyButton:hover {
+	text-decoration: none;
+	background-color: #337ab7;
+	color: white;
+	border: 1px;
+	border-color: black;
+}
+
+#copyButton:active {
+	text-decoration-style: none; 
+}
+
+.showBox {
+	background-color: #F48C6C;
+	border-radius: 25px;
+	height: 100px;
+	width: 60%;
+	margin: auto;
+	display: none;
+	font-family: Oswald;
+	font-size: 30px;
+	padding-top: 30px;
+	padding-bottom: 30px;
 }
 
 #resultBox p {
@@ -134,8 +184,8 @@ body a:hover {
 }
 
 #linkImage {
-	height: 250px;
-	width: 250px;
+	height: 200px;
+	width: 200px;
 	text-align: center;
 	margin-top: 5%;
 }
@@ -152,12 +202,20 @@ body a:hover {
 }
 
 #footerContainer {
+	position: fixed;
+	bottom: 0;
 	display: inline;
+	padding: 0;
+}
+
+.navbar.navbar-inverse.navbar-fixed-bottom {
+	height: 30px;
 }
 
 footer {
 	position: absolute;
-	bottom: 5px;
+	overflow: hidden;
+	bottom: 0;
 	width: 98%;
 	text-align: center;
 	font-family: Lato;
@@ -172,8 +230,8 @@ footer a {
 	padding: 0px 5px;
 	font-size: 25px;
 	color: #F48C6C;
-/*		position: relative;
-bottom: -25px;*/
+	position: relative;
+	bottom: 40px;
 }
 
 footer a:hover {
@@ -183,7 +241,7 @@ footer a:hover {
 footer p {
 	width: 90%;
 	position: relative;
-	bottom: -40px;
+	/*bottom: -40px;*/
 	left: 5%;
 }
 
