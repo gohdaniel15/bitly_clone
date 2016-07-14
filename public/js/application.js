@@ -22,12 +22,12 @@ $(document).ready(function() {
 				}
 			else {
 					$('#resultBox').hide();
-					$("#resultBox").html("https://ditly.herokuapp.com/" + msg.short_url);
+					$("#resultBox").html("https://shortli.herokuapp.com/" + msg.short_url);
 					$("#resultBox").addClass("showBox");
 					$("#resultBox").slideToggle('slow');
 					$("#copyButton").css('display', 'none');
 					$("#copyButton").slideToggle('slow');
-				}	
+				}
 			}
 		});
 
@@ -44,5 +44,5 @@ $(document).ready(function() {
   $("#copyButton").on("click", function() {
     	copyToClipboard('#resultBox');
   });
- 
+
 });
