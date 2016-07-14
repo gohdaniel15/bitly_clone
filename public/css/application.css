@@ -48,7 +48,7 @@ body a:hover {
 }
 
 #urlRow {
-	display: inline block;
+	display: inline-block;
 }
 
 #urlRow:hover {
@@ -148,7 +148,7 @@ body a:hover {
 }
 
 #copyButton:active {
-	text-decoration-style: none; 
+	text-decoration-style: none;
 }
 
 .showBox {
@@ -224,10 +224,10 @@ footer {
 }
 
 footer a {
-	display: inline block;
+	display: inline-block;
 	width: 2%;
 	float: right;
-	padding: 0px 5px;
+	padding: 0 5px;
 	font-size: 25px;
 	color: #F48C6C;
 	position: relative;
