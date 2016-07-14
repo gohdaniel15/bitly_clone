@@ -6,7 +6,7 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css" integrity="sha384-y3tfxAZXuh4HwSYylfB+J125MxIs6mR5FOHamPBG064zB+AFeWH94NdvaCBm8qnd" crossorigin="anonymous">
 	<link href="https://fonts.googleapis.com/css?family=Lato:400,700|Oswald:700|Londrina+Shadow" rel="stylesheet">
 <!-- js -->
-	
+
 	<script src="https://use.fontawesome.com/5760e317e8.js"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 	<script src="/js/application.js"></script>
@@ -21,17 +21,6 @@
 		<p id="infoStatement">SHORTEN. SHARE.</p>
 		<p id="infoDescription">Daniel's URL Shortener is a project for a NEXT Academy Bootcamp that is modeled after Bitly.</p>
 		<p id="infoDescription">Not quite as complex as Bitly- but this app does the job.</p>
-		<p style="margin-top: 1%">Daniel's Shortened Urls</p>
-		<div class="wrapper">
-			<table id="urlTable">	
-				<tr>
-					<th id="urlHeader">Original Url</th>
-					<th id="urlHeader">Short Url</th>
-				</tr>
-				<%Url.last(20).each do |url|%>
-				<tr id="urlRow"><td id="urlData"><%=url.long_url%></td><td id="urlData"><%=url.short_url%></td></tr>
-				<%end%>
-			</table>
 		</div>
 	</div>
 
