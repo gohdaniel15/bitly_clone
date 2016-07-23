@@ -119,11 +119,6 @@ body a:hover {
 	margin-top: 5%;
 	margin-bottom: 50px;
 	font-family: Oswald;
-	display: inline block;
-}
-
-#submitButton:active {
-	text-decoration-style: none;
 }
 
 #inputBox {
@@ -149,32 +144,18 @@ body a:hover {
 	border-color: black;
 }
 
-#copyButton:active {
-	text-decoration-style: none;
-}
-
 .showBox {
-	background-color: #F48C6C;
-	border-radius: 25px;
-	height: 100px;
-	width: 60%;
-	margin: auto;
-	display: none;
-	font-family: Oswald;
-	font-size: 30px;
 	padding-top: 30px;
 	padding-bottom: 30px;
 }
 
 #resultBox p {
-	position: inline;
 	padding-top: 30px;
 	padding-bottom: 30px;
 
 }
 
 #resultBox a {
-	position: inline;
 	padding-top: 30px;
 	padding-bottom: 30px;
 	text-decoration: none;
@@ -185,16 +166,11 @@ body a:hover {
 	color: #337ab7;
 }
 
-#linkImage {
+.linkLogo {
 	height: 200px;
 	width: 200px;
 	text-align: center;
 	margin-top: 5%;
-}
-
-#leftEyeball {
-	transform: rotate(360deg);
-	transform-origin: top left;
 }
 
 #pageTitle {
@@ -210,7 +186,7 @@ body a:hover {
 	padding: 0;
 }
 
-.navbar.navbar-inverse.navbar-fixed-bottom {
+.navbar-fixed-bottom {
 	height: 30px;
 }
 
@@ -226,10 +202,8 @@ footer {
 }
 
 footer a {
-	display: inline-block;
 	width: 2%;
 	float: right;
-	padding: 0 5px;
 	font-size: 25px;
 	color: #F48C6C;
 	position: relative;
@@ -245,8 +219,4 @@ footer p {
 	position: relative;
 	/*bottom: -40px;*/
 	left: 5%;
-}
-
-.flipped{
-	-webkit-transform: scale(1,-1);
 }
